@@ -11,12 +11,43 @@ List 2 connects block headers, and each header represents a memory block whose s
 
 ## Overview
 
+This project is an attempt at implementing a memory allocator by replacing the malloc/free with a personal memory management system based on the buddy system.
+
+
 ## Manifest
+
+`buddy.c` - This is the main project file of this program and contains the four main functions of the implementation of the buddy system. 
+
+The four main functions and their importance are listed below:
+
+- buddy_init(): initializes the main buddy system
+- printBuddyLists(): prints the lists of available blocks in the system
+- buddy_malloc(): allocates the memory and returns a pointer to the allocated memory
+- buddy_free(): frees the memory space allocated by buddy_malloc()
 
 ## Building the project
 
+After cloning the repository, from the root of the project run `make` to build the project. 
+
 ## Features and usage
 
+This project is run through the use of test files and cases.
+
+This is how you should run the buddy-unit-test program:
+```
+(base) [@onyx ]$ ./buddy-unit-test s
+(base) [@onyx ]$ ./buddy-unit-test v
+```
+
+This is how you should run the buddy-test or malloc-test program:
+```
+(base) [@onyx ]$ ./buddy-test 100 1234 s
+(base) [@onyx ]$ ./buddy-test 100 1234 v
+(base) [@onyx ]$ ./malloc-test 100 1234 s
+(base) [@onyx ]$ ./malloc-test 100 1234 v
+```
+
+My project does not run properly, so the outcome of running the above test cases will result in the printing out of empty lists without any allocation of memory.
 ## Testing
 
 ## Known Bugs

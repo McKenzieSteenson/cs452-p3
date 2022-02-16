@@ -5,15 +5,19 @@
 
 ## Overview
 
-Concisely explain what the program does. If this exceeds a couple of
-sentences, you're going too far. Generally you should be pulling this
-right from the project specification. We don't want you to just cut and
-paste, but paraphrase what is stated in the project specification.
+This project is an attempt at implementing a memory allocator by replacing the malloc/free with a personal memory management system based on the buddy system.
+
 
 ## Manifest
 
-A listing of source files and other non-generated files and a brief (one line)
-explanation of the purpose of each file.
+`buddy.c` - This is the main project file of this program and contains the four main functions of the implementation of the buddy system. 
+
+The four main functions and their importance are listed below:
+
+- buddy_init(): initializes the main buddy system
+- printBuddyLists(): prints the lists of available blocks in the system
+- buddy_malloc(): allocates the memory and returns a pointer to the allocated memory
+- buddy_free(): frees the memory space allocated by buddy_malloc()
 
 ## Building the project
 
