@@ -3,12 +3,6 @@
 * Author: McKenzie Steenson
 * Class: CS452/CS552 [Operating Systems] Section #1
 
-Main idea: define 30 circular doubly linked lists:
-List 0 connects block headers, and each header
-represents a memory block whose size is 2^0=1 byte.
-It's kval is 0;
-List 2 connects block headers, and each header represents a memory block whose size is 2^2=4 bytes
-
 ## Overview
 
 This project is an attempt at implementing a memory allocator by replacing the malloc/free with a personal memory management system based on the buddy system.
@@ -59,7 +53,7 @@ Due to issues remaining in the buddy_malloc() and buddy_free() functions, my imp
 
 ## Reflection and Self Assessment
 
-I was successful (as far as I can tell) in initializing my lists which was confirmed by my buddy print function running correctly and printing out all of the empty lists that were initialized. This was a great feeling!
+I was successful (as far as I can tell) in initializing my lists which was confirmed by my buddy print function running correctly and printing out all of the empty lists that were initialized. This was a great feeling! My understanding of the main idea: 'define 30 circular doubly linked lists: List 0 connects block headers, and each header represents a memory block whose size is 2^0=1 byte. It's kval is 0; List 2 connects block headers, and each header represents a memory block whose size is 2^2=4 bytes' was solid, and what I understood the most when working through it in class.
 
 Things seemed to go down hill from there. I utilized the pseudo code worked on in class in conjunction with the XOR example and casting research from the previous project to build the malloc and free functions with. But after I felt as though I had gotten those fleshed out with the initial aspects, I got lost thinking through the circular double linked list. This is where my project is lacking in the most. Doubly linked lists were a concept I struggled with implementing in CS 321 as well, and my lack of knowledge and practice in C made this even more difficult in this program.
 
