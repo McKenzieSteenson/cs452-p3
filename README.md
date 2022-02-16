@@ -67,5 +67,7 @@ Due to a very busy work and school schedule, I did not leave adequete time to co
 
 ## Sources Used
 [Printing Structs](https://stackoverflow.com/questions/41304497/print-the-structure-fields-and-values-in-c)
+
 [Linked Lists](https://stackoverflow.com/questions/20418624/how-to-check-if-a-linked-list-is-empty)
+
 [Type Casting](https://www.tutorialspoint.com/cprogramming/c_type_casting.htm)
